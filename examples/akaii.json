@@ -1,0 +1,26 @@
+{
+  "schemaVersion": 1,
+  "providers": [
+    {
+      "id": "akaii",
+      "name": "AK AII",
+      "baseUrl": "https://ai.akaii.top/v1",
+      "protocol": "chat_completions",
+      "engine": "http",
+      "credentialRef": "env:AKAII_API_KEY",
+      "timeoutMs": 120000
+    }
+  ],
+  "models": [
+    {
+      "routeId": "akaii-gpt-5.5",
+      "providerId": "akaii",
+      "name": "GPT-5.5",
+      "modelId": "gpt-5.5",
+      "capabilities": { "text": true, "vision": true },
+      "stream": false,
+      "temperature": 0.2
+    }
+  ],
+  "selectedRouteId": "akaii-gpt-5.5"
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "providers": [
+    {
+      "id": "my-pi-provider",
+      "name": "My pi-ai provider",
+      "baseUrl": "https://your-provider.example/v1",
+      "protocol": "chat_completions",
+      "engine": "pi-ai",
+      "credentialRef": "env:MY_PROVIDER_API_KEY"
+    }
+  ],
+  "models": [
+    {
+      "routeId": "my-vision-route",
+      "providerId": "my-pi-provider",
+      "name": "My vision model",
+      "modelId": "REPLACE_WITH_PROVIDER_MODEL_ID",
+      "capabilities": { "text": true, "vision": true },
+      "stream": true,
+      "contextWindow": 32000,
+      "maxOutputTokens": 2048
+    }
+  ]
+}
