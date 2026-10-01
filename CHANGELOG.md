@@ -1,5 +1,11 @@
 # Changelog
 
+## 2026-10-01 — 三平台测试示例
+
+- 新增 DeepSeek、豆包（火山方舟）、OpenRouter 官方地址和模型预设。
+- 新增 npm run smoke，支持 HTTP 非流式、HTTP 流式和 pi-ai 三种模式，密钥从本地 .env / 环境变量读取。
+- 新增中文实测教程和 5 项本地测试；DeepSeek 三种模式真实调用通过。
+
 ## 0.1.2 — 2026-10-01
 
 - 统一使用 Pi ModelDocker 名称，更新包名、CLI、SDK 类名、数据库环境变量与示例。

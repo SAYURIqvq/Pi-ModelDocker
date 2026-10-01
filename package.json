@@ -32,7 +32,9 @@
     "test": "node --import tsx --test tests/*.test.ts",
     "check": "npm test",
     "cli": "node dist/cli.js",
-    "pretest": "npm run build"
+    "pretest": "npm run build",
+    "presmoke": "npm run build",
+    "smoke": "node --env-file-if-exists=.env examples/provider-smoke.mjs"
   },
   "dependencies": {
     "zod": "3.25.76"

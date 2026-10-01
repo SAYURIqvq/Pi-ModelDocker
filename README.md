@@ -1,5 +1,7 @@
 # Pi ModelDocker
 
+**快速实测：** 复制 `.env.example` 为 `.env`，填写对应平台密钥后执行 `npm ci` 和 `npm run smoke -- deepseek all`。已预设 DeepSeek、豆包、OpenRouter；见 [三平台实测教程](docs/PROVIDER-SMOKE.zh-CN.md)。
+
 Pi ModelDocker 是一个支持 pi-ai 适配的轻量级多平台模型调用框架，统一管理平台、模型与 API 密钥引用，提供文本与图片输入、流式输出和统一错误处理，让业务通过一套接口接入不同模型。
 
 中文项目介绍与 GitHub 仓库描述见 [中文描述](docs/DESCRIPTION.zh-CN.md)。
